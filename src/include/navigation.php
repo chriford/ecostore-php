@@ -1,7 +1,7 @@
 <nav class="flex items-center justify-between flex-wrap bg-teal-600 px-4 py-2">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
         <img src="/assets/bullseye-1917.png" class="h-16" alt="">
-        <span class="font-semibold text-xl tracking-tight">DigiBrand</span>
+        <span class="font-semibold text-xl tracking-tight">EcoStore</span>
     </div>
     <div class="block lg:hidden">
         <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -19,7 +19,7 @@
             <a href="/src/services.php" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
                 Services
             </a>
-            <a href="/src/about.php" class="block mt-4 ml-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            <a href="/src/about.php" class="block mt-4 md:ml-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
                 About
             </a>
         </div>
