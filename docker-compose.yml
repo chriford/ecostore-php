@@ -8,8 +8,12 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: bookstore
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      # MYSQL_USER: root
+      # MYSQL_PASSWORD: root
+    networks:
+      - main
+    volumes:
+      - mysql_db:./volumes/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -22,4 +26,14 @@ services:
       - 8080:80
     links:
       - mysql_db
-      
+    networks:
+      - main
+    volumes:
+      - admin:./volumes/phpmyadmin
+
+networks:
+  main:
+
+volumes:
+  mysql_db:
+  admin:
